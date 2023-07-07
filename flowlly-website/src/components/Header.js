@@ -19,7 +19,7 @@ const Header= ({scroll}) => {
 
 
   return (
-      <div id="nav-bar" className={`py-8 px-20  z-40 fixed w-full flex flex-row justify-between ${scrollPosition < 60 ? '' : 'bg-[#000000E5] rounded'}`}>
+      <div id="nav-bar" className={`py-8 px-20  z-40 fixed w-full 2xl:px-96 flex flex-row justify-between ${scrollPosition < 60 ? '' : 'bg-[#000000E5] rounded'}`}>
         <img src={logo} alt="logo" className={`${scrollPosition < 60 ? 'w-[20%]': 'w-[12%]'}`}/>
         <button className="text-black text-xl font-bold bg-white px-3 py-2 rounded-full shadow-md" onClick={scroll}>Contact Us</button>
       </div>     
